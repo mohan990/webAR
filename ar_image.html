@@ -24,10 +24,11 @@
       <!-- <a-entity gltf-model="./knight_witch/scene.gltf" scale="0.5 0.5 0.5">  -->
         <a-image src="./knight_witch/tree-736885__480.jpg" rotation="90 0 180" scale="0.5 0.5 0.5"></a-image>
       <!-- <a-entity camera></a-entity> -->
-      <a-entity camera look-controls position="0 1.6 0"></a-entity>
-      <!-- <a-entity id="rig" position="0 10 0">
-        <a-entity id="camera" camera look-controls></a-entity>
-      </a-entity> -->
+      <!-- <a-entity camera look-controls position="0 1.6 0"></a-entity> -->
+      <a-entity camera look-controls>
+        <a-entity geometry="primitive: plane; height: 0.2; width: 0.2" position="0 0 -1"
+                  material="color: gray; opacity: 0.5"></a-entity>
+      </a-entity>
     </a-scene>
   </body>
 </body>
